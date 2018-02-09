@@ -4,4 +4,3 @@
 [submodule "public"]
     path = public
     url = git@github.com:auriza/auriza.github.io.git
-    branch = master
