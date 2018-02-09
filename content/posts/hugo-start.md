@@ -18,7 +18,8 @@ cd blog
 git init
 git submodule add https://github.com/MunifTanjim/minimo themes/minimo
 cp themes/minimo/exampleSite/config.toml .
-editor config.toml          # edit info situs dan penulis
+# edit info situs dan penulis
+editor config.toml
 ```
 
 # Link Akses Publik
@@ -30,8 +31,8 @@ ln -s public ~/public_html/blog
 # Tulis Post Baru
 
 ```sh
-hugo new posts/my-first-post.md
-editor content/posts/my-first-post.md
+hugo new posts/first-post.md
+editor content/posts/first-post.md
 ```
 
 Pastikan *header* dokumen `draft` diset `false` agar terpublikasi.
