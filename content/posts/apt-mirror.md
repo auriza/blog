@@ -43,7 +43,7 @@ sudo apt-mirror
 
 ~~~ sh
 sudo apt install apache2
-sudo ln -s /var/spool/apt-mirror/mirror/archive.ubuntu.com/ubuntu/
+sudo ln -s /var/spool/apt-mirror/mirror/id.archive.ubuntu.com/ubuntu/
 ~~~
 
 
