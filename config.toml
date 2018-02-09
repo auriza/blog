@@ -1,4 +1,4 @@
-baseURL = "http://auriza.github.io"
+baseURL = "https://auriza.github.io"
 title = "e-Notes"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
