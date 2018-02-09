@@ -49,7 +49,7 @@ kamu.
 
 Setelah blog di lokal sudah berjalan, kamu bisa mempublikasikan blogmu melalui
 [GitHub Pages](https://pages.github.com/). Nanti, blog kamu dapat diakses di
-alamat <https://<USERNAME>.github.io>, keren kan!
+alamat <https://USERNAME.github.io>, keren kan!
 
 Pertama, daftar dulu di [GitHub](https://github.com/) untuk mendapatkan
 *username*. Setelah itu, buat repo dengan nama *username*.github.io.
@@ -71,4 +71,4 @@ git commit -m "First commit"
 git push -u origin master
 ~~~
 
-Buka *browser* dan buka blog baru kamu di laman <https://<USERNAME>.github.io>.
+Buka *browser* dan buka blog baru kamu di laman <https://USERNAME.github.io>.
