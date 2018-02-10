@@ -1,6 +1,6 @@
 ---
 title: "Hugo Start"
-date: 2018-02-09T21:32:53+07:00
+date: 2017-11-14T15:50:00+07:00
 draft: false
 tags: [blog, hugo]
 categories: [web]
