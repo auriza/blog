@@ -15,7 +15,7 @@ Saya cek RAM dengan Memtest86+, ternyata alamat `0x3fad8e08` bermasalah.
 Sebabnya karena cuma satu bit saja yang *error* (misal dari 1111 berubah menjadi 1101).
 Jadi saat pemakaian RAM melebihi 1 GB, maka alamat ini akan terpakai dan *software* menjadi tidak stabil.
 
-![Memtest86+](/img/badram.jpg)
+![Memtest86+](/badram.jpg)
 
 Apakah RAM yang bermasalah ini masih bisa dipakai? Bisa.
 Ada fitur pada kernel Linux untuk menandai alamat RAM yang bermasalah, yaitu [BadRAM](https://help.ubuntu.com/community/BadRAM).
