@@ -20,7 +20,7 @@ cd blog
 git init
 git submodule add https://github.com/MunifTanjim/minimo themes/minimo
 cp themes/minimo/exampleSite/config.toml .
-# edit info situs dan penulis
+# edit info baseURL
 editor config.toml
 ```
 
@@ -28,7 +28,7 @@ editor config.toml
 
 ```sh
 # symlink ke direktori webroot user
-ln -s public ~/public_html/blog
+ln -s ~/blog/public ~/public_html/blog
 ```
 
 ## Tulis *Post* Baru
