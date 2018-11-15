@@ -10,42 +10,47 @@ categories: [web]
 Hugo adalah *generator* situs web statik.
 Halamannya ditulis menggunakan format Markdown.
 
+
 ## Inisialisasi Situs Baru
 
 ```sh
-# buat situs baru
-hugo new site blog
-cd blog
-# tambahkan tema
-git init
-git submodule add https://github.com/MunifTanjim/minimo themes/minimo
-cp themes/minimo/exampleSite/config.toml .
-# edit info baseURL
-editor config.toml
+       # buat situs baru
+     ~ $ hugo new site blog
+     ~ $ cd blog
+       # tambahkan tema
+~/blog $ git init
+~/blog $ git submodule add https://github.com/MunifTanjim/minimo themes/minimo
+~/blog $ cp themes/minimo/exampleSite/config.toml .
+       # edit baseURL
+~/blog $ sed -i "/baseURL/ s_example.org_os.apps.cs.ipb.ac.id/~$USER/blog_" config.toml
 ```
+
 
 ## *Link* Akses Publik
 
 ```sh
-# symlink ke direktori webroot user
-ln -s ~/blog/public ~/public_html/blog
+       # symlink ke direktori webroot user
+~/blog $ ln -s ~/blog/public ~/public_html/blog
 ```
+
 
 ## Tulis *Post* Baru
 
 ```sh
-# buat post baru
-hugo new posts/first-post.md
-# edit isinya
-editor content/posts/first-post.md
+       # buat post baru
+~/blog $ hugo new posts/first-post.md
+       # edit isinya
+~/blog $ editor content/posts/first-post.md
 ```
 
 Pastikan *header* dokumen `draft` diset `false` agar terpublikasi.
 
+
 ## *Generate* Situs Statik
 
 ```sh
-hugo --baseURL http://os.apps.cs.ipb.ac.id/~$USER/blog
+       # generate HTML
+~/blog $ hugo --baseURL http://os.apps.cs.ipb.ac.id/~$USER/blog/
 ```
 
 Buka laman di atas untuk melihat situs baru anda.
